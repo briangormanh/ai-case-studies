@@ -881,9 +881,9 @@
            ============================ */
         .ai-leads-grid {
             margin-top: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
         }
         .ai-lead-card {
             padding: 1rem 1.25rem;
@@ -912,6 +912,17 @@
         }
         .dark-section .ai-lead-detail { color: var(--text-muted-light); }
         .light-section .ai-lead-detail { color: var(--text-secondary); }
+        .ai-lead-pct {
+            margin-left: auto;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--brand);
+            background: var(--brand-10);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
 
         /* ============================
            CALLOUT
@@ -1233,14 +1244,48 @@
             </div>
         </section>
 
-        <!-- AI Visibility Proof -->
+        <!-- The Proof: Traffic + AI Visibility -->
         <section class="dark-section">
             <div class="section-inner">
-                <div class="section-label reveal">AI visibility</div>
-                <h3 class="section-title reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.2rem);">ChatGPT Is <em>Already Recommending</em> Her</h3>
-                <p class="section-sub reveal reveal-d1">Without any AI-specific optimization, Dr. Katie Orr appears in ChatGPT results for holistic dentistry queries in Indianapolis.</p>
+                <div class="section-label reveal">The proof</div>
+                <h3 class="section-title reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.2rem);">SME Content Dominates Traffic. <em>AI Followed.</em></h3>
+                <p class="section-sub reveal reveal-d1">Two pages from 30-minute expert interviews now outperform every other page on the site&mdash;and ChatGPT is already recommending her.</p>
 
-                <div class="ai-proof reveal reveal-d2">
+                <!-- Horizontal Bar Chart -->
+                <div class="bar-chart reveal reveal-d2" data-chart="bars">
+                    <div class="bar-chart-row">
+                        <div class="bar-chart-label">Holistic Root Canals</div>
+                        <div class="bar-chart-track"><div class="bar-chart-fill" data-width="100"></div></div>
+                        <div class="bar-chart-value">1,914</div>
+                    </div>
+                    <div class="bar-chart-row">
+                        <div class="bar-chart-label">Holistic Dental Cleaning</div>
+                        <div class="bar-chart-track"><div class="bar-chart-fill" data-width="67"></div></div>
+                        <div class="bar-chart-value">1,284</div>
+                    </div>
+                    <div class="bar-chart-row">
+                        <div class="bar-chart-label">ioRinse</div>
+                        <div class="bar-chart-track"><div class="bar-chart-fill muted" data-width="23"></div></div>
+                        <div class="bar-chart-value">434</div>
+                    </div>
+                    <div class="bar-chart-row">
+                        <div class="bar-chart-label">Zoom Teeth Whitening</div>
+                        <div class="bar-chart-track"><div class="bar-chart-fill muted" data-width="17"></div></div>
+                        <div class="bar-chart-value">326</div>
+                    </div>
+                    <div class="bar-chart-row">
+                        <div class="bar-chart-label">TMJ Natural Remedies</div>
+                        <div class="bar-chart-track"><div class="bar-chart-fill muted" data-width="14"></div></div>
+                        <div class="bar-chart-value">267</div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="section-label reveal" style="margin-top: 0;">AI visibility</div>
+                <h3 class="section-title reveal" style="font-size: clamp(1.5rem, 3vw, 1.8rem); margin-bottom: 0.75rem;">ChatGPT Is <em>Already Recommending</em> Her</h3>
+
+                <div class="ai-proof reveal reveal-d1">
                     <div class="ai-proof-screenshot">
                         <img src="chatgpt-katie-orr.png" alt="ChatGPT recommending Dr. Katie Orr for Best Holistic Family Friendly Dentist in Indianapolis">
                         <div class="screenshot-highlight">
@@ -1326,43 +1371,14 @@
             </div>
         </section>
 
-        <!-- Top Pages Data -->
+        <!-- Page Deep Dive -->
         <section class="dark-section">
             <div class="section-inner">
                 <div class="section-label reveal">The data</div>
-                <h3 class="section-title reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.2rem);">Top Pages &mdash; <em>All From SME Content</em></h3>
-                <p class="section-sub reveal reveal-d1">The two highest-traffic pages on the entire site are both from subject matter expert interviews. Neither existed a year ago.</p>
+                <h3 class="section-title reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.2rem);">Page-Level <em>Deep Dive</em></h3>
+                <p class="section-sub reveal reveal-d1">Both SME pages are ranking for high-value keywords and pulling in traffic that didn't exist a year ago.</p>
 
-                <!-- Horizontal Bar Chart -->
-                <div class="bar-chart reveal reveal-d2" data-chart="bars">
-                    <div class="bar-chart-row">
-                        <div class="bar-chart-label">Holistic Root Canals</div>
-                        <div class="bar-chart-track"><div class="bar-chart-fill" data-width="100"></div></div>
-                        <div class="bar-chart-value">1,914</div>
-                    </div>
-                    <div class="bar-chart-row">
-                        <div class="bar-chart-label">Holistic Dental Cleaning</div>
-                        <div class="bar-chart-track"><div class="bar-chart-fill" data-width="67"></div></div>
-                        <div class="bar-chart-value">1,284</div>
-                    </div>
-                    <div class="bar-chart-row">
-                        <div class="bar-chart-label">ioRinse</div>
-                        <div class="bar-chart-track"><div class="bar-chart-fill muted" data-width="23"></div></div>
-                        <div class="bar-chart-value">434</div>
-                    </div>
-                    <div class="bar-chart-row">
-                        <div class="bar-chart-label">Zoom Teeth Whitening</div>
-                        <div class="bar-chart-track"><div class="bar-chart-fill muted" data-width="17"></div></div>
-                        <div class="bar-chart-value">326</div>
-                    </div>
-                    <div class="bar-chart-row">
-                        <div class="bar-chart-label">TMJ Natural Remedies</div>
-                        <div class="bar-chart-track"><div class="bar-chart-fill muted" data-width="14"></div></div>
-                        <div class="bar-chart-value">267</div>
-                    </div>
-                </div>
-
-                <div class="detail-grid reveal reveal-d3" style="margin-top: 2.5rem;">
+                <div class="detail-grid reveal reveal-d2">
                     <div class="detail-card">
                         <div class="detail-card-label">Top Page</div>
                         <div class="detail-card-title">The Truth About Holistic Root Canals</div>
@@ -1383,7 +1399,7 @@
                     </div>
                 </div>
 
-                <div class="data-table-wrap reveal" style="margin-top: 2rem;">
+                <div class="data-table-wrap reveal reveal-d3" style="margin-top: 2rem;">
                     <table class="data-table">
                         <thead>
                             <tr>
@@ -1566,7 +1582,7 @@
             <div class="section-inner">
                 <div class="section-label reveal">AI-driven leads</div>
                 <h3 class="section-title reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.2rem);">Real Inquiries From <em>AI Platforms</em></h3>
-                <p class="section-sub reveal reveal-d1">Between January and December 2025, Kent MCLS received 7 form submissions attributed to AI sources&mdash;primarily ChatGPT. All were for Translation MA programs, where each enrollment is worth ~$35K in tuition revenue. These leads arrived without any AI-specific optimization.</p>
+                <p class="section-sub reveal reveal-d1">Between January and December 2025, Kent MCLS received 7 form submissions attributed to AI sources&mdash;primarily ChatGPT. All were for Translation MA programs, where each enrollment is worth ~$35K in tuition revenue. AI's share of organic form submissions grew from 2% to 9% over the year&mdash;without any AI-specific optimization.</p>
 
                 <!-- AI Leads Timeline -->
                 <div class="timeline-chart reveal reveal-d2" data-chart="timeline">
@@ -1656,40 +1672,51 @@
                     </div>
                 </div>
 
-                <div class="ai-leads-grid reveal reveal-d3" style="margin-top: 2rem;">
+                <div style="margin-top: 2rem; display: flex; align-items: center; justify-content: space-between;" class="reveal reveal-d3">
+                    <div style="font-size: 0.78rem; font-weight: 600; color: var(--text-secondary);">Individual AI-attributed form submissions</div>
+                    <div style="font-size: 0.72rem; font-weight: 600; color: var(--text-secondary);">% of organic leads</div>
+                </div>
+                <div class="ai-leads-grid reveal" style="margin-top: 0.5rem;">
                     <div class="ai-lead-card">
                         <div class="ai-lead-date">Dec 2025</div>
                         <div class="ai-lead-detail">100% Online &mdash; Translation MA &mdash; Arabic</div>
+                        <div class="ai-lead-pct">9%</div>
                     </div>
                     <div class="ai-lead-card">
                         <div class="ai-lead-date">Oct 2025</div>
                         <div class="ai-lead-detail">Translation MA &mdash; French</div>
+                        <div class="ai-lead-pct">7%</div>
                     </div>
                     <div class="ai-lead-card">
                         <div class="ai-lead-date">Aug 2025</div>
                         <div class="ai-lead-detail">100% Online &mdash; Translation MA &mdash; Japanese</div>
+                        <div class="ai-lead-pct">8%</div>
                     </div>
                     <div class="ai-lead-card">
                         <div class="ai-lead-date">Aug 2025</div>
                         <div class="ai-lead-detail">100% Online &mdash; Translation MA &mdash; Russian</div>
+                        <div class="ai-lead-pct">8%</div>
                     </div>
                     <div class="ai-lead-card">
                         <div class="ai-lead-date">Jun 2025</div>
                         <div class="ai-lead-detail">100% Online &mdash; Translation MA &mdash; Japanese</div>
+                        <div class="ai-lead-pct">4%</div>
                     </div>
                     <div class="ai-lead-card">
                         <div class="ai-lead-date">Mar 2025</div>
                         <div class="ai-lead-detail">Program interest &mdash; N/A</div>
+                        <div class="ai-lead-pct">2%</div>
                     </div>
                     <div class="ai-lead-card">
                         <div class="ai-lead-date">Jan 2025</div>
                         <div class="ai-lead-detail">100% Online &mdash; Translation MA &mdash; Arabic</div>
+                        <div class="ai-lead-pct">2%</div>
                     </div>
                 </div>
 
                 <div class="callout reveal">
                     <div class="callout-title">What this proves</div>
-                    <div class="callout-text">AI platforms are recommending Kent's Translation MA program to prospective graduate students. At ~$35K per enrollment, every one of these leads carries real revenue potential. These are real form submissions from real prospective students&mdash;all generated from standard SEO work, not AI-specific optimization.</div>
+                    <div class="callout-text">AI platforms are recommending Kent's Translation MA program to prospective graduate students. At ~$35K per enrollment, every one of these leads carries real revenue potential. And the trend is clear: AI's share of organic form submissions grew from 2% in January to 9% in December&mdash;all from standard SEO work, not AI-specific optimization.</div>
                 </div>
             </div>
         </section>
