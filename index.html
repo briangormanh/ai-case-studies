@@ -1752,8 +1752,8 @@
                 btn.classList.add('active');
                 document.getElementById(btn.dataset.tab).classList.add('active');
                 window.scrollTo({ top: 0, behavior: 'smooth' });
-                // Re-trigger reveal animations and charts
-                document.querySelectorAll('.reveal').forEach(el => {
+                // Re-trigger reveal animations only inside tab panels (not the hero)
+                document.querySelectorAll('.case-study-panel .reveal').forEach(el => {
                     el.classList.remove('visible');
                     revealObserver.observe(el);
                 });
