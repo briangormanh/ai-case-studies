@@ -1,0 +1,13 @@
+# ----------------------------------------
+# Traffic acquisition: Session primary channel group (Default Channel Group)
+# Account: kucharstudio
+# Property: Kuchar - GA4
+# ----------------------------------------
+# 
+# All Users
+# Start date: 20250101
+# End date: 20251231
+Session primary channel group (Default Channel Group),Session source / medium,Sessions,Engaged sessions,Average engagement time per session,Active users,Engaged sessions per active user,Events per session,Engagement rate,Event count,Key events,Total revenue,New users,Session key event rate
+Referral,chatgpt.com / referral,157,121,59.07006369426752,119,1.0168067226890756,5.974522292993631,0.7707006369426752,938,9,0,107,0.050955414012738856
+Unassigned,chatgpt.com / (not set),41,22,44.90243902439025,37,0.5945945945945946,4.926829268292683,0.5365853658536586,202,1,0,35,0.024390243902439025
+Organic Search,chatgpt.com / organic,14,9,44.142857142857146,12,0.75,5.428571428571429,0.6428571428571429,76,0,0,11,0
